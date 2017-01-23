@@ -64,7 +64,7 @@ $gateway = Get-AzureRmApplicationGateway -Name 'ContosoGateway'
 
 Set-AzureRmDiagnosticSetting -ResourceId $gateway.ResourceId  -WorkspaceId $workspaceId -Enabled $true
 
-$nsg = Get-AzureRmNetworkSecurityGroup -Name 'ContosoNSG'
+$nsg = Get-AzureRmNetworkSecurityGroup -Name 'ContosoNSG' -ResourceGroupName 'ContosoRG'
 
 Set-AzureRmDiagnosticSetting -ResourceId $nsg.ResourceId  -WorkspaceId $workspaceId -Enabled $true
 ```
