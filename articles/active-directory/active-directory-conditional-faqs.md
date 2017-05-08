@@ -49,3 +49,8 @@ The policy is currently not enforced for SharePoint guest users. The guest relat
 **A:** not yet. 
 
 ---
+
+## Does conditional access policies support Nested Groups?
+**A:** Yes. Conditional access support the concept of nesting groups (adding groups to other groups).
+
+---
